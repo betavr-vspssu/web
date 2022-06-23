@@ -1,0 +1,18 @@
+body {
+  all: unset;
+}
+
+#topbar {
+  all: unset;
+  position: absolute;
+  width: calc(100% - 16px);
+  height: 3rem;
+  padding: 8px;
+  background-color: #646464;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#topbar img {
+  height: 100%;
+}/*# sourceMappingURL=style.css.map */

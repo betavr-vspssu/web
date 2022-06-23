@@ -1,0 +1,19 @@
+body {
+    all: unset;
+}
+
+#topbar {
+    all: unset;
+    position: absolute;
+    width: calc(100% - 8px * 2);
+    height: 3rem;
+    padding: 8px;
+    background-color: #646464;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 100%;
+    }
+}
