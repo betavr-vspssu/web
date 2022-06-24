@@ -62,6 +62,7 @@ body {
         padding: 2px;
         border-radius: 4px;
         font-family: 'Cabin', sans-serif;
+        font-size: 1.5rem;
         @include bg-gradient(20deg,(#47c1f0 0%, #00a0e4 100%));
         div {
             transition: 0.5s;
