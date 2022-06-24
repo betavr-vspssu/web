@@ -2,37 +2,78 @@ body {
     all: unset;
 }
 
-@mixin gradient($direction, $list) { 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,500&family=Krona+One&display=swap');
+
+@mixin bg-gradient($direction, $list) { 
     background: -webkit-linear-gradient($direction, $list);
     background: -moz-linear-gradient($direction, $list);
     background: -o-linear-gradient($direction, $list);
     background: linear-gradient($direction, $list);  
-  }  
+}
 
 #topbar {
     all: unset;
     position: absolute;
-    width: calc(100% - 8px * 2);
+    width: calc(100% - 1rem * 2);
     height: 3rem;
-    padding: 8px;
-    background-color: #323248;
+    padding: 1rem;
+    background-color: #161616;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
-    img {
-        height: 100%;
-        filter: drop-shadow(0px 0px 6px #abababaa);
+    .baritem {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        font-family: 'Cabin', sans-serif;
+        font-size: 1.5rem;
+        color: #DDDDDD;
+
+        img {
+            height: 3rem;
+        }
     }
 }
 
 #title {
-    height: 100vh;
-    width: 100vw;
+    padding: 4rem;
+    height: calc(100vh - 4rem * 2);
+    width: calc(100vw - 4rem * 2);
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    @include gradient(to bottom, (#000000 0%, #000000 33%, #080808 100%))
+    text-align: center;
+    color: #AAAAAA;
+    font-family: 'Krona One', sans-serif;
+    @include bg-gradient(to bottom, (#000000 0%, #000000 33%, #080812 100%));
+    .title {
+        margin-top: -3rem;
+    }
+    img {
+        margin-top: 6rem;
+        height: 50vh;
+    }
+    .button {
+        padding: 2px;
+        border-radius: 4px;
+        font-family: 'Cabin', sans-serif;
+        @include bg-gradient(20deg,(#47c1f0 0%, #00a0e4 100%));
+        div {
+            transition: 0.5s;
+            margin-top: unset;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #000000DD;
+        }
+        div:hover {
+
+            background-color: #00000000;
+            color: #000000;
+        }
+    }
 }

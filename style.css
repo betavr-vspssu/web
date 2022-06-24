@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,500;1,500&family=Krona+One&display=swap");
+body {
+  all: unset;
+}
+
+#topbar {
+  all: unset;
+  position: absolute;
+  width: calc(100% - 2rem);
+  height: 3rem;
+  padding: 1rem;
+  background-color: #161616;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#topbar .baritem {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Cabin", sans-serif;
+  font-size: 1.5rem;
+  color: #DDDDDD;
+}
+#topbar .baritem img {
+  height: 3rem;
+}
+
+#title {
+  padding: 4rem;
+  height: calc(100vh - 8rem);
+  width: calc(100vw - 8rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #AAAAAA;
+  font-family: "Krona One", sans-serif;
+  background: linear-gradient(to bottom, #000000 0%, #000000 33%, #080812 100%);
+}
+#title .title {
+  margin-top: -3rem;
+}
+#title img {
+  margin-top: 6rem;
+  height: 50vh;
+}
+#title .button {
+  padding: 2px;
+  border-radius: 4px;
+  font-family: "Cabin", sans-serif;
+  background: linear-gradient(20deg, #47c1f0 0%, #00a0e4 100%);
+}
+#title .button div {
+  transition: 0.5s;
+  margin-top: unset;
+  padding: 4px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.8666666667);
+}
+#title .button div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #000000;
+}/*# sourceMappingURL=style.css.map */
